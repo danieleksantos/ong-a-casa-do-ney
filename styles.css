@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito, sans-serif;
+}
+body {
+    padding-top: 115px;
+}
+
+/* Links do menu */
+.navbar-nav .nav-link:not(.dropdown-toggle) {
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+    color: black;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #1100ff;
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle):hover {
+    color: #1100ff !important;
+    transform: scale(1.05);
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after {
+    width: 100%;
+}
+
+.blue-icons i:hover{
+    color: #1100ff;
+}
+
+/* Links dropdown */
+.navbar-nav .nav-link.dropdown-toggle {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link.dropdown-toggle:hover {
+    color: #1100ff !important;
+    transform: scale(1.05);
+}
+
+/* Fundo dropdown igual ao header */
+.dropdown-menu {
+    background-color: #fffd82;
+    border: none;
+    border-radius: 0;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Itens do dropdown */
+.dropdown-menu .dropdown-item {
+    background-color: transparent;
+    color: black;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover do dropdown */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #d5d3fa;
+    color: #1100ff !important;
+}
+
+/* Carrossel */
+#carouselExampleDark {
+    height: 450px; 
+}
+
+#carouselExampleDark .carousel-inner {
+    height: 100%;
+}
+
+#carouselExampleDark .carousel-item {
+    height: 100%;
+}
+
+#carouselExampleDark .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    right: 10%; 
+    left: auto;
+}
+
+.carousel-caption .text-end {
+    text-align: right; 
+}
+
+.carousel-item--desenho .carousel-caption {
+    left: 8%;
+    color:#d86403;
+}
+
+.text-jiu {
+    background-color: #d86403;
+    color:#FFF;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.button-principal {
+    background-color: #d86403 !important;
+    border: 2px solid #d86403;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #FFF;
+    transition: width 0.3s ease;
+}
+
+.button-principal:hover{
+    color: #d86403;
+    background-color: #FFF !important;
+    border: 2px solid #d86403;
+}
+
+.button-secundario {
+    background-color: #FFF !important;
+    border: 2px solid #d86403;
+    border-radius: 20px;
+    padding: 8px 15px;
+    color: #d86403;
+    transition: width 0.3s ease;
+}
+
+.button-secundario:hover{
+    color: #FFF;
+    border: none;;
+    background-color: #d86403 !important;
+}
+
+.button-pix {
+    background-color: #d86403 !important;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    color: #FFF;
+}
+
+.button-pix:hover{
+    filter: brightness(1.1);
+    color: #FFF;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #000; 
+}
+
+.carousel-indicators .active {
+  background-color: #fffd82; 
+}
+
+
+.img-acoes {
+  width: 100%;
+  max-width: 500px;   
+  height: 400px;     
+  object-fit: cover; 
+  border-radius: 12px; 
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.border-custom-color {
+  border-color: #1100ff !important; 
+}
+
+.policy-section {
+    padding: 2rem 0;
+    border-bottom: 1px solid #e9ecef;
+}
+.policy-section:last-child {
+    border-bottom: none;
+}
+
+.politicas h2 {
+    font-weight: 700;
+    color: #212529;
+}
+
+.politicas h4 {
+    font-weight: 600;
+    color: #212529;
+    margin-top: 2rem;
+}
+
+.nossa-historia .card{
+    background-color: #fdad6c;
+}
+
+.bi-key-fill {
+    color: #d86403 !important;
+}
+
+/* --- Estilos para Padrinhos e Apoiadores --- */
+.padrinho-item {
+    margin-bottom: 2rem;
+}
+
+.icon-container-padrinhos {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #d86403;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.icon-padrinhos {
+    font-size: 3rem;
+    color: #d86403;
+}
+
+.icon-container-padrinhos:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+  background: linear-gradient(to top right, #d86403, #eb934c);
+  color: #000;
+}
+footer a{
+    color: #000;
+}
+
+:target {
+    scroll-margin-top: 100px;
+}
+
+.acoes-sociais .img-fluid {
+    object-fit: cover; 
+    width: 100%;
+    height: 200px !important; 
+}
+
+@media (max-width: 768px) {
+
+.carousel-jiu {
+    bottom: 20px !important;
+    right: 0 !important;
+    left: 100px;
+}
+
+.carousel-jiu h5 {
+    font-size: 12px;
+}
+
+body {
+    padding-top: 85px;
+}
+
+.navbar-brand img {
+    width: 60px !important; 
+}
+    
+.navbar-toggler {
+    padding: 8px 10px !important; 
+    font-size: 18px !important; 
+}
+}
