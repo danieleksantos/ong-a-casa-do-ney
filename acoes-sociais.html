@@ -15,11 +15,13 @@
 </head>
 
 <body>
-    <header>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
         <nav class="navbar navbar-expand-lg fw-semibold px-3 px-md-5 fixed-top navbar-light"
             style="background-color: #fffd82;">
             <div class="container-fluid text-uppercase">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.html" aria-label="Página inicial A Casa do Ney">
                     <img src="images/A_CASA_DO_NEY-logo.png" alt="logo A Casa do Ney" width="90" height="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,18 +53,20 @@
                         <li class="nav-item"><a class="nav-link text-dark" href="quero-contribuir.html">Quero
                                 Contribuir</a></li>
                         <li class="nav-item"><a class="nav-link text-dark" href="novidades.html">Novidades</a></li>
-
                         <li class="nav-item"><a class="nav-link text-dark" href="contato.html">Contato</a></li>
                     </ul>
 
-                    <div class="d-flex gap-3 blue-icons">
-                        <a href="https://www.instagram.com/acasadoney/" target="_blank" class="text-black fs-4">
+                    <div class="d-flex gap-3 blue-icons" role="navigation" aria-label="Links de Redes Sociais">
+                        <a href="https://www.instagram.com/acasadoney/" target="_blank" class="text-black fs-4"
+                            aria-label="Instagram da A Casa do Ney">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="https://wa.me/5511954617427" target="_blank" class="text-black fs-4">
+                        <a href="https://wa.me/5511954617427" target="_blank" class="text-black fs-4"
+                            aria-label="WhatsApp da A Casa do Ney">
                             <i class="bi bi-whatsapp"></i>
                         </a>
-                        <a href="mailto:acasadoney@gmail.com" target="_blank" class="text-black fs-4">
+                        <a href="mailto:acasadoney@gmail.com" target="_blank" class="text-black fs-4"
+                            aria-label="E-mail da A Casa do Ney">
                             <i class="bi bi-envelope"></i>
                         </a>
                     </div>
@@ -71,7 +75,7 @@
         </nav>
     </header>
 
-    <main class="container acoes-sociais">
+    <main id="main-content" class="container acoes-sociais">
         <div class="container my-5">
             <h1 class="text-center fw-bold mb-5">Galeria de Ações Sociais</h1>
             <p class="lead text-center mb-5">
@@ -81,142 +85,162 @@
 
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img1.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 1)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 1)"
+                        aria-label="Ver imagem da galeria 1 em tela cheia">
                         <img src="images/Galeria/img1.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Membros da comunidade recebendo doações da A Casa do Ney.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img2.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 2)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 2)"
+                        aria-label="Ver imagem da galeria 2 em tela cheia">
                         <img src="images/Galeria/img2.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Crianças em um evento da A Casa do Ney, recebendo brinquedos.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img3.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 3)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 3)"
+                        aria-label="Ver imagem da galeria 3 em tela cheia">
                         <img src="images/Galeria/img3.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Voluntários da A Casa do Ney organizando cestas básicas.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img4.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 4)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 4)"
+                        aria-label="Ver imagem da galeria 4 em tela cheia">
                         <img src="images/Galeria/img4.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Distribuição de alimentos para famílias em situação de vulnerabilidade.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img5.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 5)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 5)"
+                        aria-label="Ver imagem da galeria 5 em tela cheia">
                         <img src="images/Galeria/img5.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Crianças brincando em uma festa de Dia das Crianças promovida pela ONG.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img6.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 6)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 6)"
+                        aria-label="Ver imagem da galeria 6 em tela cheia">
                         <img src="images/Galeria/img6.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Evento de Páscoa com crianças, recebendo doces e ovos de chocolate.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img7.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 7)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 7)"
+                        aria-label="Ver imagem da galeria 7 em tela cheia">
                         <img src="images/Galeria/img7.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Doação de agasalhos e cobertores para a comunidade no inverno.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img8.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 8)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 8)"
+                        aria-label="Ver imagem da galeria 8 em tela cheia">
                         <img src="images/Galeria/img8.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Equipe da A Casa do Ney preparando refeições para a comunidade.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img9.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 9)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 9)"
+                        aria-label="Ver imagem da galeria 9 em tela cheia">
                         <img src="images/Galeria/img9.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Entrega de alimentos e kits de higiene para famílias.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img10.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 10)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 10)"
+                        aria-label="Ver imagem da galeria 10 em tela cheia">
                         <img src="images/Galeria/img10.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Voluntários ajudando a distribuir mantimentos em um bairro carente.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img11.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 11)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 11)"
+                        aria-label="Ver imagem da galeria 11 em tela cheia">
                         <img src="images/Galeria/img11.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Oficina de artesanato para idosos promovida pela ONG.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img12.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 12)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 12)"
+                        aria-label="Ver imagem da galeria 12 em tela cheia">
                         <img src="images/Galeria/img12.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Evento social com distribuição de roupas e sapatos.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img13.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 13)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 13)"
+                        aria-label="Ver imagem da galeria 13 em tela cheia">
                         <img src="images/Galeria/img13.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Equipe de voluntários preparando um mutirão de limpeza comunitária.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img14.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 14)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 14)"
+                        aria-label="Ver imagem da galeria 14 em tela cheia">
                         <img src="images/Galeria/img14.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Crianças participando de atividades educacionais da A Casa do Ney.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img15.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 15)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 15)"
+                        aria-label="Ver imagem da galeria 15 em tela cheia">
                         <img src="images/Galeria/img15.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Doação de cobertores e agasalhos para famílias em situação de rua.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img16.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 16)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 16)"
+                        aria-label="Ver imagem da galeria 16 em tela cheia">
                         <img src="images/Galeria/img16.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Voluntários montando kits de higiene pessoal.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img17.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 17)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 17)"
+                        aria-label="Ver imagem da galeria 17 em tela cheia">
                         <img src="images/Galeria/img17.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Distribuição de brinquedos durante um evento de Natal.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img18.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 18)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 18)"
+                        aria-label="Ver imagem da galeria 18 em tela cheia">
                         <img src="images/Galeria/img18.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Comunidade local participando de uma palestra sobre saúde.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img19.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 19)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 19)"
+                        aria-label="Ver imagem da galeria 19 em tela cheia">
                         <img src="images/Galeria/img19.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Grupo de voluntários e membros da comunidade em uma foto.">
                     </a>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <a href="images/Galeria/img20.jpeg"
-                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 20)">
+                        data-caption="Ações promovidas pela Casa do Ney para a comunidade (Foto 20)"
+                        aria-label="Ver imagem da galeria 20 em tela cheia">
                         <img src="images/Galeria/img20.jpeg" class="img-fluid rounded shadow gallery-thumbnail"
-                            alt="Ações promovidas pela Casa do Ney para a comunidade" loading="lazy">
+                            alt="Mutirão de voluntários plantando árvores em um projeto de reflorestamento.">
                     </a>
                 </div>
             </div>
@@ -232,16 +256,18 @@
         </div>
     </main>
 
-    <footer class="py-5 pb-3">
+    <footer class="py-5 pb-3" role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
                     <h5 class="text-uppercase mb-4">Endereço</h5>
-                    <p>
-                        Estrada do Jusa 140 A Fundos<br>
-                        Parelheiros, São Paulo, SP<br>
-                        CEP 04889-000
-                    </p>
+                    <address>
+                        <p>
+                            Estrada do Jusa 140 A Fundos<br>
+                            Parelheiros, São Paulo, SP<br>
+                            CEP 04889-000
+                        </p>
+                    </address>
                 </div>
                 <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
                     <h5 class="text-uppercase mb-4">Contato</h5>

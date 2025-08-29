@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Conheça a história de A Casa do Ney, uma ONG que nasceu em homenagem a Claudinei Ribeiro da Silva para apoiar crianças com deficiência e suas famílias no extremo da Zona Sul de São Paulo.">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Nossa História - A Casa do Ney</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,11 +15,13 @@
 </head>
 
 <body>
-    <header>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
         <nav class="navbar navbar-expand-lg fw-semibold px-3 px-md-5 fixed-top navbar-light"
             style="background-color: #fffd82;">
             <div class="container-fluid text-uppercase">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="index.html" aria-label="Página inicial A Casa do Ney">
                     <img src="images/A_CASA_DO_NEY-logo.png" alt="logo A Casa do Ney" width="90" height="auto">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,10 +33,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav mx-auto text-dark">
                         <li class="nav-item">
-                            <a class="nav-link active text-dark" aria-current="page" href="index.html">Início</a>
+                            <a class="nav-link text-dark" href="index.html">Início</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                            <a class="nav-link dropdown-toggle text-dark active" aria-current="page" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Sobre Nós
                             </a>
@@ -40,7 +44,8 @@
                                 <li><a class="dropdown-item text-dark" href="index.html#missao">Missão</a></li>
                                 <li><a class="dropdown-item text-dark" href="index.html#missao">Visão</a></li>
                                 <li><a class="dropdown-item text-dark" href="index.html#missao">Valores</a></li>
-                                <li><a class="dropdown-item text-dark" href="nossa-historia.html">Nossa História</a>
+                                <li><a class="dropdown-item text-dark" href="nossa-historia.html"
+                                        aria-current="page">Nossa História</a>
                                 </li>
                             </ul>
                         </li>
@@ -53,15 +58,18 @@
                         <li class="nav-item"><a class="nav-link text-dark" href="contato.html">Contato</a></li>
                     </ul>
 
-                    <div class="d-flex gap-3 blue-icons">
-                        <a href="https://www.instagram.com/acasadoney/" target="_blank" class="text-black fs-4">
-                            <i class="bi bi-instagram"></i>
+                    <div class="d-flex gap-3 blue-icons" role="navigation" aria-label="Links de Redes Sociais">
+                        <a href="https://www.instagram.com/acasadoney/" target="_blank" class="text-black fs-4"
+                            aria-label="Instagram da A Casa do Ney">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
                         </a>
-                        <a href="https://wa.me/5511954617427" target="_blank" class="text-black fs-4">
-                            <i class="bi bi-whatsapp"></i>
+                        <a href="https://wa.me/5511954617427" target="_blank" class="text-black fs-4"
+                            aria-label="WhatsApp da A Casa do Ney">
+                            <i class="bi bi-whatsapp" aria-hidden="true"></i>
                         </a>
-                        <a href="mailto:acasadoney@gmail.com" target="_blank" class="text-black fs-4">
-                            <i class="bi bi-envelope"></i>
+                        <a href="mailto:acasadoney@gmail.com" target="_blank" class="text-black fs-4"
+                            aria-label="E-mail da A Casa do Ney">
+                            <i class="bi bi-envelope" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -69,11 +77,11 @@
         </nav>
     </header>
 
-    <main class="container">
-        <section class="container my-5 nossa-historia">
+    <main class="container" id="main-content">
+        <section class="container my-5 nossa-historia" aria-labelledby="historia-heading">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h2 class="text-center mb-4 display-4 fw-bold">Nossa História</h2>
+                    <h1 class="text-center mb-4 display-4 fw-bold" id="historia-heading">Nossa História</h1>
                     <p class="lead">
                         A Casa do Ney nasceu para lembrar e homenagear Claudinei Ribeiro da Silva, professor de judô que
                         nos deixou de forma tão repentina em 2018. Em 2021, sua irmã Adriana Dias criou a Casa do Ney
@@ -87,11 +95,15 @@
                     <p class="mt-4">
                         Seguimos um pensamento de Madre Teresa de Calcutá:
                     </p>
-                    <blockquote
+                    <figure
                         class="blockquote text-center border-start border-4 border-info ps-3 py-2 my-4 border-custom-color">
-                        <p class="mb-0 fst-italic">“Não devemos permitir que alguém saia da nossa presença sem se sentir
-                            melhor e mais feliz.”</p>
-                    </blockquote>
+                        <blockquote class="mb-0 fst-italic">“Não devemos permitir que alguém saia da nossa presença sem
+                            se sentir
+                            melhor e mais feliz.”</blockquote>
+                        <figcaption class="blockquote-footer mt-2">
+                            Madre Teresa de Calcutá
+                        </figcaption>
+                    </figure>
 
                     <p>
                         É assim que trabalhamos todos os dias: acolhendo famílias, criando oportunidades e ajudando cada
@@ -101,26 +113,26 @@
 
                     <div class="text-center my-5">
                         <img src="images/ney.jpeg" class="img-fluid rounded shadow-sm"
-                            alt="Crianças e adolescentes em atividades na Casa do Ney">
+                            alt="Professor Claudinei Ribeiro da Silva em aula de judô com adolescentes">
                         <small class="d-block text-muted mt-2">Ney em aula com adolescentes expondo seu troféu.</small>
                     </div>
 
                     <hr class="my-5">
 
-                    <h3 class="mb-4">Nosso foco: Cuidar de quem cuida</h3>
+                    <h2 class="mb-4">Nosso foco: Cuidar de quem cuida</h2>
                     <p>
-                        Na A Casa do Ney, acreditamos que cuidar de <strong>mães atípicas</strong> é cuidar de toda a
+                        Na A Casa do Ney, acreditamos que cuidar de **mães atípicas** é cuidar de toda a
                         família. Essas mulheres enfrentam muito mais do que aparenta: o peso emocional de um
                         diagnóstico, a sobrecarga física e mental, a incerteza financeira e, muitas vezes, a solidão no
                         cuidado diário de uma criança com necessidades específicas.
                     </p>
                     <p>
-                        Nosso projeto <strong>“Humanizar, para ser humanizado”</strong> nasceu com o propósito de
+                        Nosso projeto **“Humanizar, para ser humanizado”** nasceu com o propósito de
                         oferecer um espaço de acolhimento, troca e fortalecimento. Aqui, defendemos que ninguém deve
                         sair de nossa presença sem se sentir mais amparado e feliz.
                     </p>
 
-                    <h3 class="mt-5 mb-3">A neurociência como aliada</h3>
+                    <h2 class="mt-5 mb-3">A neurociência como aliada</h2>
                     <p>
                         Acreditamos que compreender o cérebro é fundamental para promover o desenvolvimento pleno das
                         crianças atípicas e a saúde mental de seus cuidadores. A neurociência nos fornece ferramentas
@@ -134,36 +146,39 @@
                         para embasar nossas ações, mas nunca perdemos de vista o valor da empatia e da escuta.
                     </p>
 
-                    <h3 class="mt-5 mb-4">O que oferecemos</h3>
+                    <h2 class="mt-5 mb-4">O que oferecemos</h2>
                     <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-
-                        <div class="col">
+                        <div class="col" aria-labelledby="card-1-heading">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body text-center">
-                                    <i class="bi bi-heart-fill text-danger fs-1 mb-3"></i>
-                                    <h5 class="card-title">Escuta empática e acolhimento humanizado</h5>
+                                    <i class="bi bi-heart-fill text-danger fs-1 mb-3" aria-hidden="true"></i>
+                                    <h5 class="card-title" id="card-1-heading">Escuta empática e acolhimento
+                                        humanizado</h5>
                                     <p class="card-text text-muted">Um espaço seguro para compartilhar medos, dúvidas e
                                         sonhos, reconhecendo cada história com respeito, sensibilidade e atenção.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col" aria-labelledby="card-2-heading">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body text-center">
-                                    <i class="bi bi-person-fill-lock text-primary fs-1 mb-3"></i>
-                                    <h5 class="card-title">Atendimento psicológico especializado</h5>
-                                    <p class="card-text text-muted">Apoio emocional para lidar com os desafios diários e
-                                        prevenir o adoecimento mental, com foco na saúde integral.</p>
+                                    <i class="bi bi-person-fill-lock text-primary fs-1 mb-3" aria-hidden="true"></i>
+                                    <h5 class="card-title" id="card-2-heading">Atendimento psicológico
+                                        especializado</h5>
+                                    <p class="card-text text-muted">Apoio emocional para lidar com os desafios diários
+                                        e prevenir o adoecimento mental, com foco na saúde integral.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col" aria-labelledby="card-3-heading">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body text-center">
-                                    <i class="bi bi-file-earmark-person-fill text-success fs-1 mb-3"></i>
-                                    <h5 class="card-title">Orientação sobre direitos e políticas públicas</h5>
+                                    <i class="bi bi-file-earmark-person-fill text-success fs-1 mb-3"
+                                        aria-hidden="true"></i>
+                                    <h5 class="card-title" id="card-3-heading">Orientação sobre direitos e políticas
+                                        públicas</h5>
                                     <p class="card-text text-muted">Informações claras e objetivas para garantir o
                                         acesso a serviços, benefícios e oportunidades, fortalecendo a autonomia das
                                         famílias.</p>
@@ -171,22 +186,22 @@
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col" aria-labelledby="card-4-heading">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body text-center">
-                                    <i class="bi bi-people-fill text-info fs-1 mb-3"></i>
-                                    <h5 class="card-title">Rodas de conversa e grupos de apoio</h5>
+                                    <i class="bi bi-people-fill text-info fs-1 mb-3" aria-hidden="true"></i>
+                                    <h5 class="card-title" id="card-4-heading">Rodas de conversa e grupos de apoio</h5>
                                     <p class="card-text text-muted">Momentos de reflexão, troca de experiências e
                                         construção de redes de apoio que promovem pertencimento e união.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col" aria-labelledby="card-5-heading">
                             <div class="card h-100 shadow-sm border-0">
                                 <div class="card-body text-center">
-                                    <i class="bi bi-briefcase-fill text-warning fs-1 mb-3"></i>
-                                    <h5 class="card-title">Oficinas profissionalizantes</h5>
+                                    <i class="bi bi-briefcase-fill text-warning fs-1 mb-3" aria-hidden="true"></i>
+                                    <h5 class="card-title" id="card-5-heading">Oficinas profissionalizantes</h5>
                                     <p class="card-text text-muted">Capacitação em áreas como maquiagem, design de
                                         sobrancelhas, manicure, crochê, artesanato e outras, com o objetivo de gerar
                                         renda.</p>
@@ -199,12 +214,12 @@
 
             <div class="row justify-content-center mt-5">
                 <div class="col-lg-8">
-                    <h3 class="text-center mb-4">Veja mais sobre a nossa história</h3>
+                    <h2 class="text-center mb-4">Veja mais sobre a nossa história</h2>
                     <p class="text-center mb-4">Assista e sinta de perto a alegria, o carinho e o impacto que estamos
                         gerando na vida de tantas famílias. Cada doação e trabalho voluntário faz parte dessa história.
                     </p>
                     <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/TPCN4toKAbI" title="YouTube video player"
+                        <iframe src="https://www.youtube.com/embed/TPCN4toKAbI" title="Vídeo: A História de A Casa do Ney"
                             frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
@@ -214,32 +229,35 @@
         </section>
     </main>
 
-    <footer class="py-5 pb-3">
+    <footer class="py-5 pb-3" role="contentinfo">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
                     <h5 class="text-uppercase mb-4">Endereço</h5>
-                    <p>
-                        Estrada do Jusa 140 A Fundos<br>
-                        Parelheiros, São Paulo, SP<br>
-                        CEP 04889-000
-                    </p>
+                    <address>
+                        <p>
+                            Estrada do Jusa 140 A Fundos<br>
+                            Parelheiros, São Paulo, SP<br>
+                            CEP 04889-000
+                        </p>
+                    </address>
                 </div>
 
                 <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
                     <h5 class="text-uppercase mb-4">Contato</h5>
                     <ul class="list-unstyled">
                         <li>
-                            <i class="bi bi-whatsapp me-2"></i>
+                            <i class="bi bi-whatsapp me-2" aria-hidden="true"></i>
                             <a href="https://wa.me/5511954617427" class="text-decoration-none">(11) 95461-7427</a>
                         </li>
                         <li>
-                            <i class="bi bi-envelope-fill me-2"></i>
-                            <a href="mailto:acasadoney@gmail.com" class="text-decoration-none">acasadoney@gmail.com</a>
+                            <i class="bi bi-envelope-fill me-2" aria-hidden="true"></i>
+                            <a href="mailto:acasadoney@gmail.com"
+                                class="text-decoration-none">acasadoney@gmail.com</a>
                         </li>
                         <li>
-                            <i class="bi bi-instagram me-2"></i>
+                            <i class="bi bi-instagram me-2" aria-hidden="true"></i>
                             <a href="https://www.instagram.com/acasadoney/" target="_blank"
                                 class="text-decoration-none">Siga-nos no Instagram</a>
                         </li>
@@ -261,7 +279,6 @@
                         </li>
                     </ul>
                 </div>
-
             </div>
 
             <hr class="mt-4 mb-4 border-black">
